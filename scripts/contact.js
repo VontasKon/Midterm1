@@ -10,6 +10,6 @@ document.querySelector("#contactForm").addEventListener("submit", function(event
         "Message: " + document.querySelector("#message").value
     );
 
-    this.reset(); //clears the form ?>
+    this.reset(); //clears the form >
 });
 // FUCK
