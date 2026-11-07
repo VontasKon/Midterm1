@@ -30,7 +30,90 @@
     </div>
 </section>
 
-TABLE
+TABLE goes here
+
+
+
+
+
+
+    <section class="container my-5">
+        <h2 class="mb-3">Campaign Tasks</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead >
+
+                    <tr> <!-- bad but i could not make it work otherwise. -->
+                        <th style="background-color: #ee3d07; color: white;">#</th>
+                        <th style="background-color: #ee3d07; color: white;">Task Name</th>
+                        <th style="background-color: #ee3d07; color: white;">Description</th>
+                        <th style="background-color: #ee3d07; color: white;">Due Date</th>
+                        <th style="background-color: #ee3d07; color: white;">Priority</th>
+                        <th style="background-color: #ee3d07; color: white;">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTable">
+
+                    <tr>
+                        <td>1</td>
+                        <td>Plan Food For Next Session</td>
+                        <td>Dsicuss and choose the food we will order.</td>
+                        <td>11-12-2026</td>
+                        <td>Medium</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Create Backup Character</td>
+                        <td>Create Backup Character at lvl.8, you can use any common race or background. </td>
+                        <td>12-20-2026</td>
+                        <td>High</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+<hr>
+
+
+
+
+
+    <!-- TASK APPLICATION -->
+    <section class="container my-5">
+        <h2>Add a New Task</h2>
+        <form id="taskForm">
+            <div class="mb-3">
+                <label class="form-label">Task Name</label>
+                <input type="text" id="taskName" class="form-control" required maxlength="150">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Description</label>
+                <textarea id="taskDescription" class="form-control" rows="3" required maxlength="150"></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Due Date</label>
+                <input type="date" id="taskDate" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Priority</label>
+                <select id="taskPriority" class="form-select">
+                    <option>High</option>
+                    <option selected>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <button type="submit" class="btn text-white"
+                style="background-color: #ee3d07;">
+                Add Task
+            </button>
+        </form>
+    </section>
 
 
 
