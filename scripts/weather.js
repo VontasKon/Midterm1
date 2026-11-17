@@ -3,13 +3,20 @@
 const temperature = document.querySelector("#temperature");
 const description = document.querySelector("#weatherDescription");
 
-
 // I am using the open meteo api as seen online... thnhis fetches the weather code and current temperature for the area with the coordinates that have been punched in like seeing a map from above
 fetch(`https://api.open-meteo.com/v1/forecast?latitude=37.9593&longitude=23.7513&current=temperature_2m,weather_code&timezone=auto`)
 
-    // Converts the API response into json, json is stored as texd and can be read by many languages
-    .then(response => response.json())
 
+    // Converts the API response into json, json is stored as texd and can be read by many languages
+    .then(response => {
+        if (!response.ok) { //added check for server response
+            throw new Error("Weather request has failed!")
+        }
+        return response.json();
+    })
+    
+
+    
     // Use the received weather data
     .then(data => {
 
@@ -37,3 +44,12 @@ fetch(`https://api.open-meteo.com/v1/forecast?latitude=37.9593&longitude=23.7513
         }
 
     })
+// Handle errors if the request fails
+    .catch(error => {
+        console.log("Weather error:", error); //this will show on the broweser console
+        temperature.textContent = "Weather not available...";
+        description.textContent = "Could not load weather data...";
+    });
+
+
+ 
