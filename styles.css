@@ -1,0 +1,31 @@
+/* every pages headers */
+.site-hero {
+    background: linear-gradient(
+        135deg,
+        #E53935 0%,
+        #ee3d07 50%,
+        #E53935 100%
+    );
+}
+
+/* Footer */
+.site-footer {
+    background: linear-gradient(
+        135deg,
+        #E53935 0%,
+        #ee3d07 50%,
+        #E53935 100%
+    );
+}
+
+/*button*/
+.btn-brand {
+    background-color: #ee3d07;
+    border-color: #ee3d07;
+}
+
+/*  task table header */
+.task-table thead th {
+    background-color: #ee3d07;
+    color: white;
+}
