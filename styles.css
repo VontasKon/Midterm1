@@ -29,3 +29,9 @@
     background-color: #ee3d07;
     color: white;
 }
+
+
+.btn-brand:hover {
+    background-color: #ff0400;
+    border-color: #ff0400;
+    color: white;}
