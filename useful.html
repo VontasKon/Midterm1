@@ -14,6 +14,7 @@
     <script src="scripts/navbar.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/dice.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
 </head>
 <body>
@@ -44,6 +45,28 @@
 
 <hr>
 
+<section class="container my-1">
+    <div class="card bg-body-tertiary shadow rounded-3 p-4 text-center">
+        <h2 class="fw-bold mb-3">D&D Dice Roller</h2>
+        <p>Click a die to roll it!</p>
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+
+            <button id="rollD4" class="btn text-white btn-brand">D4</button>
+            <button id="rollD6" class="btn text-white btn-brand">D6</button>
+            <button id="rollD8" class="btn text-white btn-brand">D8</button>
+            <button id="rollD10" class="btn text-white btn-brand">D10</button>
+            <button id="rollD12" class="btn text-white btn-brand">D12</button>
+            <button id="rollD20" class="btn text-white btn-brand">D20</button>
+            <button id="rollD100" class="btn text-white btn-brand">%100</button>
+
+        </div>
+
+        <h1 id="diceResult" class="display-1 fw-bold my-3">?</h1>
+
+        <p id="diceMessage">Your result will appear here.</p>
+    </div>
+</section>
+
 <h3 class="text-center mt-4">A very useful video on getting started.</h3>
 
 
@@ -51,6 +74,7 @@
   <iframe src="https://www.youtube.com/embed/1D5Mpd4lMS4" title="YouTube video" allowfullscreen></iframe>
 </div>
 
+<hr>
 
 <div id="footer"></div>
 
